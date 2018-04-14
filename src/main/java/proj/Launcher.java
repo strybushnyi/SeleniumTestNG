@@ -1,9 +1,7 @@
 package proj;
 
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -15,7 +13,6 @@ public class Launcher {
 
     @BeforeSuite
     public void setUpDriver() {
-        DesiredCapabilities caps = new DesiredCapabilities();
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe"); // Can be in default folder
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);

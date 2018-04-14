@@ -8,7 +8,7 @@ import java.util.HashSet;
 public class JavaTests {
 
     @Test
-    public void rekursiya() {
+    public void recurssion() {
         for (int i = 0; i<9; ++i) {
             System.out.println("Осталось попыток " + i);
         }
