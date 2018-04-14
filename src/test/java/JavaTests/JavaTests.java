@@ -35,4 +35,14 @@ public class JavaTests {
         newList.addAll(hasik);
         System.out.println(newList);
     }
+
+    public void countArea(int a) {
+        int b = a * a;
+        System.out.println(b);
+    }
+
+    @Test
+    public void countAreaTest() {
+        countArea(4);
+    }
 }
